@@ -7,6 +7,9 @@ import time
 """
 Task 1
 Basic Assignment:
+
+I select this first option
+
 Create a program to display 10 characters on screen, one at a time,
 to the user.  They have to press that key to advance to the next character.
 Tell the user how long it took them to press all 10 characters.
@@ -32,11 +35,25 @@ appropriate use of return values and input parameters
 # a variable. We will use it as the basis for this 
 # assignment.
 
-while True:
-    y = keyboard.read_key()
-    print(y)
-    print(time.now())
-    t = time.localtime()
-    print(t)
-    print(time.strftime("%H",t))
-    break
+def bub(apple):
+    print(f"Press the '{apple}' key.")
+    sauce = time.time()  
+    while True:
+        key = keyboard.read_key()
+        if key == apple:
+            bacon = time.time()  
+            cheesepizza = bacon - sauce
+            return cheesepizza
+
+def game():
+    total_time = 0  
+    characters = random.sample("abcdefghijklmnopqrstuvwxyz", 10) 
+    print("Game Starting: Press the right keys to proceed.")
+    for character in characters:
+        cheesepizza = bub(character)
+        total_time = cheesepizza
+        print(f"Time taken for '{character}': {cheesepizza:.2f} seconds.")
+    average = total_time / 10  
+    print(f" Game Over. Average time per character: {average:.2f} seconds.")
+
+game()
