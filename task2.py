@@ -8,7 +8,7 @@ import time
 Task 1
 Basic Assignment:
 
-I select this first option
+I select the first option: ↓
 
 Create a program to display 10 characters on screen, one at a time,
 to the user.  They have to press that key to advance to the next character.
@@ -46,14 +46,14 @@ def bub(apple):
             return cheesepizza
 
 def game():
-    total_time = 0  
+    goontime = 0  
     characters = random.sample("abcdefghijklmnopqrstuvwxyz", 10) 
     print("Game Starting: Press the right keys to proceed.")
     for character in characters:
         cheesepizza = bub(character)
-        total_time = cheesepizza
+        goontime = cheesepizza
         print(f"Time taken for '{character}': {cheesepizza:.2f} seconds.")
-    average = total_time / 10  
+    average = goontime / 10  
     print(f" Game Over. Average time per character: {average:.2f} seconds.")
 
 game()
