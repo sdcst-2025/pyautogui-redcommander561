@@ -42,18 +42,18 @@ def bub(apple):
         key = keyboard.read_key()
         if key == apple:
             bacon = time.time()  
-            cheesepizza = bacon - sauce
-            return cheesepizza
+            pizza = bacon - sauce
+            return pizza
 
 def game():
-    goontime = 0  
+    time = 0  
     characters = random.sample("abcdefghijklmnopqrstuvwxyz", 10) 
     print("Game Starting: Press the right keys to proceed.")
     for character in characters:
-        cheesepizza = bub(character)
-        goontime = cheesepizza
-        print(f"Time taken for '{character}': {cheesepizza:.2f} seconds.")
-    average = goontime / 10  
+        pizza = bub(character)
+        time = pizza
+        print(f"Time taken for '{character}': {pizza:.2f} seconds.")
+    average = time / 10  
     print(f" Game Over. Average time per character: {average:.2f} seconds.")
 
 game()
