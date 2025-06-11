@@ -7,7 +7,8 @@ brainrot = (443, 413)
 upgrades_coords = [
     (846, 290),
     (855, 375),
-    (852, 454)
+    (852, 454),
+    (868,559)
 ]
 
 def click(duration=2, interval=0.05):
